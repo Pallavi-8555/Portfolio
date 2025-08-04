@@ -1,7 +1,6 @@
 /* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-/* Body */
 body {
   background-color: #F5F7FA;
   color: #1E293B;
@@ -11,15 +10,18 @@ body {
 /* Navbar */
 .navbar {
   background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-.nav-link {
-  transition: color 0.3s ease;
-}
-.nav-link:hover {
-  color: #0d6efd !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
+.nav-link {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+  text-decoration: underline;
+}
 
 /* Hero Section */
 .hero-section {
@@ -32,8 +34,7 @@ body {
   font-size: 1.1rem;
 }
 
-
-/* Project Cards Styling */
+/* Project Cards */
 .card {
   background-color: #ffffff;
   border: 1px solid #E2E8F0;
@@ -54,31 +55,28 @@ body {
 
 /* Hover Effect */
 .card:hover {
-  background-color: #0d6efd; /* Bootstrap primary */
-  color: #ffffff;
+  background-color: #e0f0ff; 
+  color: #1E293B;
   transform: scale(1.03);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
 .card:hover .card-title,
 .card:hover .card-text {
-  color: #ffffff;
+  color: #1E293B; 
 }
 
 .card:hover .btn-outline-dark {
-  border-color: #ffffff;
-  color: #ffffff;
+  border-color: #1E293B;
+  color: #1E293B;
 }
 
 .card:hover .btn-outline-dark:hover {
-  background-color: #ffffff;
-  color: #0d6efd;
+  background-color: #1E293B;
+  color: #ffffff;
 }
 
-
-
 /* Contact Form */
-./* Form Controls */
 .form-control,
 textarea {
   background-color: #ffffff;
@@ -91,11 +89,14 @@ textarea {
   color: #94A3B8;
 }
 
+.form-control:hover {
+  border-color: #0d6efd;
+}
+
 .form-label {
   font-weight: 500;
 }
 
-/* Button */
 .btn-primary {
   background-color: #0d6efd;
   border: none;
@@ -104,4 +105,3 @@ textarea {
 .btn-primary:hover {
   background-color: #0b5ed7;
 }
-
