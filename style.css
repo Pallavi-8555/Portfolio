@@ -20,6 +20,7 @@ body {
   color: #0d6efd !important;
 }
 
+
 /* Hero Section */
 .hero-section {
   background-color: #f8f9fa;
@@ -31,38 +32,50 @@ body {
   font-size: 1.1rem;
 }
 
-/* Cards (Projects/Skills) */
+
+/* Project Cards Styling */
 .card {
   background-color: #ffffff;
   border: 1px solid #E2E8F0;
   color: #1E293B;
+  transition: all 0.3s ease;
 }
+
 .card-title {
   font-weight: 600;
   color: #1E293B;
+  transition: color 0.3s ease;
 }
+
 .card-text {
   color: #475569;
+  transition: color 0.3s ease;
 }
 
-/* Buttons */
-.btn-primary {
-  background-color: #3B82F6;
-  border: none;
+/* Hover Effect */
+.card:hover {
+  background-color: #0d6efd; /* Bootstrap primary */
   color: #ffffff;
-}
-.btn-primary:hover {
-  background-color: #2563EB;
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.btn-outline-dark {
-  border: 1px solid #3B82F6;
-  color: #3B82F6;
-}
-.btn-outline-dark:hover {
-  background-color: #3B82F6;
+.card:hover .card-title,
+.card:hover .card-text {
   color: #ffffff;
 }
+
+.card:hover .btn-outline-dark {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.card:hover .btn-outline-dark:hover {
+  background-color: #ffffff;
+  color: #0d6efd;
+}
+
+
 
 /* Contact Form */
 ./* Form Controls */
@@ -91,6 +104,4 @@ textarea {
 .btn-primary:hover {
   background-color: #0b5ed7;
 }
-
-
 
