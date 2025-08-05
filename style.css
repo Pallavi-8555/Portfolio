@@ -2,10 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 body {
-  background-color: #F5F7FA;
+background: linear-gradient(to right, #F5F7FA, #EDE9FE);
   color: #1E293B;
   font-family: 'Poppins', sans-serif;
 }
+
+section {
+  min-height: 100vh;
+}
+
 
 /* Navbar */
 .navbar {
@@ -14,19 +19,19 @@ body {
 }
 
 .nav-link {
-  color: #333;
+  color: #1E293B;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #0d6efd !important;
+  color: #5B21B6 !important;
   text-decoration: underline;
 }
 
 /* Hero Section */
-.hero-section {
-  background-color: #f8f9fa;
-}
+/* .hero-section {
+  background-color: #ffffff;
+} */
 .hero-section h1 {
   font-size: 2.8rem;
 }
@@ -34,9 +39,13 @@ body {
   font-size: 1.1rem;
 }
 
+.btn.btn-outline-dark:hover {
+  background-color: #5B21B6;
+  color: #ffffff;
+}
+
 /* Project Cards */
 .card {
-  background-color: #ffffff;
   border: 1px solid #E2E8F0;
   color: #1E293B;
   transition: all 0.3s ease;
@@ -55,24 +64,23 @@ body {
 
 /* Hover Effect */
 .card:hover {
-  background-color: #e0f0ff; 
-  color: #1E293B;
+  background-color: #EDE9FE; /* lavender tint */
   transform: scale(1.03);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
 .card:hover .card-title,
 .card:hover .card-text {
-  color: #1E293B; 
-}
-
-.card:hover .btn-outline-dark {
-  border-color: #1E293B;
   color: #1E293B;
 }
 
+.card:hover .btn-outline-dark {
+  border-color: #5B21B6;
+  color: #5B21B6;
+}
+
 .card:hover .btn-outline-dark:hover {
-  background-color: #1E293B;
+  background-color: #5B21B6;
   color: #ffffff;
 }
 
@@ -90,18 +98,19 @@ textarea {
 }
 
 .form-control:hover {
-  border-color: #0d6efd;
+  border-color: #5B21B6;
 }
 
 .form-label {
   font-weight: 500;
 }
 
+/* Primary Button */
 .btn-primary {
-  background-color: #0d6efd;
+  background-color: #5B21B6;
   border: none;
 }
 
 .btn-primary:hover {
-  background-color: #0b5ed7;
+  background-color: #7C3AED;
 }
