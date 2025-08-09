@@ -28,7 +28,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav gap-3 text-center text-lg-start me-5 fs-5">
           <li class="nav-item">
-            <a class="nav-link active fw-semibold " aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active fw-semibold text-primary text-decoration-underline" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fw-semibold text-dark" href="about.html">About</a>
@@ -59,9 +59,9 @@
           <h1 class="fw-bold text-dark mb-3">I'm <span class="text-primary">Pallavi Kute</span></h1>
           <h4 class=" mb-3">Frontend Developer</h4>
 
-          <p class="fst-italic mb-4" style="color: #64748B;">"I design with users in mind and code with clarity."</p>
+          <p class="fst-italic mb-4 text-primary">"I design with users in mind and code with clarity."</p>
 
-          <p class="mb-5">I bring websites to life using HTML, CSS, Bootstrap, and JavaScript, ensuring they look great
+          <p class="mb-5">I bring websites to life using HTML, CSS, JavaScript and React, ensuring they look great
             on every screen.</p>
 
           <div class="d-flex gap-3 justify-content-md-start justify-content-center">
@@ -72,9 +72,20 @@
 
         <div class="col-md-6 text-center mt-5 mt-md-0">
           <img src="images/pallavi.jpg" alt="Pallavi Kute" class="img-fluid rounded-4 shadow"
-            style="max-height: 360px;">
+            style="max-height: 360px; ">
+
+          <div class="d-flex justify-content-center gap-4 mt-4 ">
+            <a href="https://github.com/Pallavi-8555" target="_blank" aria-label="GitHub">
+              <img src="images/github.png" alt="GitHub Logo"    style="width: 50px; height: 50px;">
+            </a>
+            <a href="https://app.netlify.com/teams/pallavi-8555/projects" target="_blank" aria-label="Netlify">
+              <img src="images/netlify.svg" alt="Netlify Logo" style="width: 60px; height:50px;">
+            </a>
+            <!-- Add more logos as needed -->
+          </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
 
@@ -84,14 +95,14 @@
   <!-- About Me Section Start -->
   <section id="about" class="py-5">
     <div class="container">
-      <h2 class="text-center fw-bold ">About Me</h2>
+      <h2 class="about-heading text-center fw-bold ">About Me</h2>
       <div class="row align-items-center mt-5">
 
         <div class="col-md-5 text-center ">
           <img src="images/pallavi.jpg" alt="Pallavi" class="img-fluid rounded-circle mb-3 shadow"
-            style="width: 160px; height: 160px; object-fit: cover;">
+            style="width: 200px; height: 200px; object-fit: cover;">
 
-          <ul class="list-unstyled text-center fs-6 mt-3">
+          <ul class="list-unstyled text-center fs-6 mt-3" style="text-align: justify;">
             <li><strong>Name:</strong> Pallavi Kute</li>
             <li><strong>Role:</strong> Front-End Developer (Fresher)</li>
             <li><strong>Experience:</strong> Academic Projects + Internship</li>
@@ -99,14 +110,14 @@
           </ul>
         </div>
 
-        <div class="col-md-7">
-          <p class="fs-6">
+        <div class="col-md-7 fs-6">
+          <p class="" style="text-align: justify;">
             I am a passionate Front-End Developer with a strong interest in building responsive and user-friendly
             websites. I specialize in using HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS to create clean and
             accessible web interfaces. Through various academic projects, I’ve gained hands-on experience in designing
             layouts, improving user experience, and ensuring mobile responsiveness.
           </p>
-          <p>
+          <p class="about-hide" style="text-align: justify;">
             I enjoy learning new technologies and continuously improving my skills to keep up with modern web
             development trends. My goal is to work in a collaborative environment where I can contribute to real-world
             projects, learn from experienced developers, and grow both personally and professionally as a front-end
@@ -141,7 +152,7 @@
   <!-- Skills Section Start -->
   <section id="skills" class="py-5">
     <div class="container">
-      <h2 class="text-center fw-bold mb-4">My Skills</h2>
+      <h2 class="skills-heading text-center fw-bold mb-4">My Skills</h2>
       <div class="row g-4">
 
         <div class="col-md-4 col-sm-6 ">
@@ -193,23 +204,16 @@
           </div>
         </div>
 
-
-        <div class="col-md-4 col-sm-6">
-          <div class="card text-center p-3 shadow-sm d-flex flex-column justify-content-center align-items-center"
-            style="height: 170px;">
-            <img src="images/github.png" alt="GitHub" class="mx-auto" style="width: 60px; height: 60px;">
-            <h5 class="mt-3 fw-semibold">React</h5>
+        <div class="row flex justify-content-center align-items-center mt-4">
+          <div class="col-md-4 col-sm-6">
+            <div class="card text-center p-3 shadow-sm d-flex flex-column justify-content-center align-items-center"
+              style="height: 170px;">
+              <img src="images/react.png" alt="GitHub" class="mx-auto" style="width: 60px; height: 60px;">
+              <h5 class="mt-3 fw-semibold">React</h5>
+            </div>
           </div>
         </div>
 
-
-        <div class="col-md-4 col-sm-6">
-          <div class="card text-center p-3 shadow-sm d-flex flex-column justify-content-center align-items-center"
-            style="height: 170px;">
-            <img src="images/github.png" alt="GitHub" class="mx-auto" style="width: 60px; height: 60px;">
-            <h5 class="mt-3 fw-semibold">Next js</h5>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -219,19 +223,19 @@
 
 
   <!-- Projects Section Start -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="project-heading text-center fw-bold mb-5">My Projects</h2>
+      <div class="row g-4 justify-content-center align-items-stretch">
 
-  <section id="projects" class="py-5 ">
-    <div class="container ">
-      <h2 class="text-center fw-bold mb-5">My Projects</h2>
-      <div class="row g-4 ">
-
-        <div class="col-lg-4 col-md-6 ">
-          <div class="card h-100 shadow-sm">
-            <img src="images/Interior-homepage.png" class="card-img-top" alt="Project 1">
+        <div class="col-md-5 col-12 d-flex">
+          <div class="card h-100 shadow-sm d-flex flex-column">
+            <img src="images/Interior-homepage.png" class="card-img-top" alt="Interior Design Website">
             <div class="card-body">
               <h5 class="card-title fw-semibold">Interior Design Website</h5>
-              <p class="card-text">A responsive front-end website for a modern interior design brand built with HTML,
-                CSS, and Bootstrap.</p>
+              <p class="card-text">
+                A responsive front-end website for a modern interior design brand built with HTML, CSS, and Bootstrap.
+              </p>
               <a href="https://interior-website-pallavi.netlify.app" class="btn btn-primary btn-sm" target="_blank">Live
                 Demo</a>
               <a href="https://github.com/Pallavi-8555/interior-website" class="btn btn-outline-dark btn-sm ms-2"
@@ -240,9 +244,9 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 ">
-          <div class="card h-100 shadow-sm">
-            <img src="images/dashboard.png" class="card-img-top" alt="Project 2">
+        <div class="col-md-5 col-12 d-flex">
+          <div class="card h-100 shadow-sm d-flex flex-column">
+            <img src="images/dashboard.png" class="card-img-top" alt="Dashboard UI">
             <div class="card-body">
               <h5 class="card-title fw-semibold">Dashboard UI</h5>
               <p class="card-text">Responsive admin dashboard using HTML, Tailwind CSS & Chart.js.</p>
@@ -254,13 +258,14 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 ">
-g          <div class="card h-100 shadow-sm">
+        <div class="col-md-5 col-12 d-flex">
+          <div class="card h-100 shadow-sm d-flex flex-column">
             <img src="images/icecreame.png" class="card-img-top" alt="Ice Cream Website">
             <div class="card-body">
               <h5 class="card-title fw-semibold">Ice Cream Website</h5>
-              <p class="card-text">A visually appealing responsive website for an ice cream brand, built using HTML,
-                CSS, and Bootstrap.</p>
+              <p class="card-text">
+                A visually appealing responsive website for an ice cream brand, built using HTML, CSS, and Bootstrap.
+              </p>
               <a href="https://icecreame-pallavi.netlify.app" class="btn btn-primary btn-sm" target="_blank">Live
                 Demo</a>
               <a href="https://github.com/Pallavi-8555/ice-cream-website" class="btn btn-outline-dark btn-sm ms-2"
@@ -269,22 +274,74 @@ g          <div class="card h-100 shadow-sm">
           </div>
         </div>
 
+        <div class="col-md-5 col-12 d-flex">
+          <div class="card h-100 shadow-sm d-flex flex-column">
+            <img src="images/bmi.png" class="card-img-top" alt="BMI Calculator">
+            <div class="card-body">
+              <h5 class="card-title fw-semibold">BMI Calculator</h5>
+              <p class="card-text">
+                A simple and responsive Body Mass Index calculator built with HTML, CSS, and JavaScript to help users
+                track their health.
+              </p>
+              <a href="https://bmicalculator-in-js.netlify.app" class="btn btn-primary btn-sm" target="_blank">Live
+                Demo</a>
+              <a href="https://pallavi-8555.github.io/JS-BMI-calculator/" class="btn btn-outline-dark btn-sm ms-2"
+                target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 col-12 d-flex">
+          <div class="card h-100 shadow-sm d-flex flex-column">
+            <img src="images/tic-tac-toe.png" class="card-img-top" alt="Tic Tac Toe Game">
+            <div class="card-body">
+              <h5 class="card-title fw-semibold">Tic Tac Toe Game</h5>
+              <p class="card-text">
+                An interactive Tic Tac Toe game built using JavaScript that allows two players to compete in a classic
+                grid-based game.
+              </p>
+              <a href="https://awesome-tictactoe.netlify.app" class="btn btn-primary btn-sm" target="_blank">Live
+                Demo</a>
+              <a href="https://pallavi-8555.github.io/tic-tac-toe/" class="btn btn-outline-dark btn-sm ms-2"
+                target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 col-12 d-flex">
+          <div class="card h-100 shadow-sm d-flex flex-column">
+            <img src="images/amazon-clone.png" class="card-img-top" alt="Amazon Clone">
+            <div class="card-body">
+              <h5 class="card-title fw-semibold">Amazon Clone</h5>
+              <p class="card-text">
+                A responsive e-commerce website clone designed with HTML and CSS replicating key Amazon features like
+                product listing and cart.
+              </p>
+              <a href="https://amazon-clonehtml-css.netlify.app" class="btn btn-primary btn-sm" target="_blank">Live
+                Demo</a>
+              <a href="https://pallavi-8555.github.io/AmazonClone/" class="btn btn-outline-dark btn-sm ms-2"
+                target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
   </section>
+  <!-- Projects Section End -->
+
 
 
   <!-- Contact Section Start -->
   <section id="contact" class="py-5">
     <div class="container">
-      <h2 class="text-center fw-bold mb-5">Contact Me</h2>
+      <h2 class="contact-heading text-center fw-bold mb-5">Contact Me</h2>
       <div class="row g-5 align-items-start">
 
         <div class="col-md-5 text-md-start text-center">
-          <h4 class="fw-semibold mb-3">Let’s Connect</h4>
-          <p class="">Have a question, opportunity, or want to collaborate? I'd love to hear from you!</p>
-          <ul class="list-unstyled fs-6 mt-4">
+          <h4 class="fw-semibold mb-3 text-decoration-underline">Let’s Connect</h4>
+          <p class="fs-5">Have a question, opportunity, or want to collaborate? I'd love to hear from you!</p>
+          <ul class="list-unstyled fs-5 mt-4">
             <li class="mb-2"><strong>Email:</strong> pallavikute35@gmail.com</li>
             <li class="mb-2"><strong>Phone:</strong> +91 7058065114</li>
             <li><strong>Location:</strong> Maharashtra, India</li>

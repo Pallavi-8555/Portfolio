@@ -2,19 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 body {
-background: linear-gradient(to right, #F5F7FA, #EDE9FE);
+  background: linear-gradient(to right, #F5F7FA, #EDE9FE);
   color: #1E293B;
   font-family: 'Poppins', sans-serif;
 }
 
 section {
-  padding: 125px 0;
+  padding: 90px 0;
 }
 
 
 /* Navbar */
 .navbar {
-  background-color:#F0F1FC; 
+  background-color: #F0F1FC;
 }
 
 
@@ -30,12 +30,30 @@ section {
 
 /* Hero Section */
 
+
+
 .hero-section h1 {
-  font-size: 2.8rem;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
 }
+
+.hero-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .hero-section p {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
 }
+
+.hero-section .row {
+  min-height: 400px;
+  /* adjust */
+  align-items: center;
+}
+
 
 .btn.btn-outline-dark:hover {
   background-color: #5B21B6;
@@ -43,11 +61,43 @@ section {
   border: none;
 }
 
+.hero-section img {
+  max-height: 450px;
+  /* increase from 360px */
+  width: auto;
+  max-width: 100%;
+  border-radius: 1rem;
+  /* keeps rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  /* subtle shadow */
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .hero-section img {
+    width: 80%;
+    /* fills more horizontal space */
+    max-height: none;
+    /* let height adjust */
+  }
+}
+
 /* About Me */
 
-#about p,ul{
+.about-heading:hover,
+.skills-heading:hover,
+.project-heading:hover,
+.contact-heading:hover {
+  color: #5B21B6 !important;
+  text-decoration: underline;
+}
+
+
+#about p,
+ul {
   line-height: 2;
 }
+
 
 /* Project Cards */
 .card {
@@ -69,10 +119,21 @@ section {
 
 /* Hover Effect */
 .card:hover {
-  background-color: #EDE9FE; 
+  background-color: #c1c7dc;
   transform: scale(1.03);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
+
+.card-img-top {
+  height: 100%;
+  /* Fix height - adjust as you want */
+  object-fit: cover;
+  /* Crop the image to fill without distortion */
+  width: 100%;
+  /* Full width */
+  display: block;
+}
+
 
 .card:hover .card-title,
 .card:hover .card-text {
@@ -126,6 +187,13 @@ textarea {
 
 @media (max-width: 1199px) {
   section {
-    padding: 20px 0; /* or whatever smaller padding you prefer */
+    padding: 20px 0;
+    /* or whatever smaller padding you prefer */
+  }
+}
+
+@media (max-width: 992px) and (min-width: 771px) {
+  p.about-hide {
+    display: none !important;
   }
 }
