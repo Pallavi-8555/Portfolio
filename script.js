@@ -1,12 +1,12 @@
 
   document.getElementById("contactForm").addEventListener("submit", function (e) {
-    e.preventDefault(); // Stop default form submission
+    e.preventDefault(); 
 
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
     const message = document.getElementById("message").value.trim();
 
-    // Name: not empty and only letters & spaces (min 3 chars)
+    // Name
     const namePattern = /^[A-Za-z\s]{3,}$/;
     if (name === "") {
       alert("Name cannot be empty.");
@@ -16,7 +16,7 @@
       return;
     }
 
-    // Email: not empty and contains basic format
+    // Email
     if (email === "") {
       alert("Email cannot be empty.");
       return;
@@ -25,7 +25,7 @@
       return;
     }
 
-    // Message: not empty and at least 10 characters
+    // Message
     if (message === "") {
       alert("Message cannot be empty.");
       return;
@@ -34,7 +34,6 @@
       return;
     }
 
-    // All validations passed
     alert("Message sent successfully!");
     e.target.reset(); // Clear the form
   });

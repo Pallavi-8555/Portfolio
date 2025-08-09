@@ -1,138 +1,142 @@
 /* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-/* Base font and background */
 body {
+  background: linear-gradient(to right, #F5F7FA, #EDE9FE);
+  color: #1E293B;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #1e1e2f 0%, #2c2c44 100%);
-  color: #f0f0f5;
-  margin: 0;
-  padding: 0;
 }
+section {
+  padding: 90px 0;
+}
+
 
 /* Navbar */
 .navbar {
-  background-color: rgba(40, 38, 65, 0.85);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  background-color: #F0F1FC;
 }
 
 .nav-link {
-  color: #c8c7d2;
+  color: #1E293B;
   transition: color 0.3s ease;
 }
-
-.nav-link:hover,
-.nav-link.active {
-  color: #a78bfa; /* Light purple accent */
+.nav-link:hover {
+  color: #5B21B6 !important;
   text-decoration: underline;
-}
-
-/* Headings */
-h1, h2, h3, h4, h5 {
-  color: #ede9fe; /* soft white/purple */
-  font-weight: 700;
 }
 
 /* Hero Section */
-.hero-section {
-  padding: 6rem 0;
-  text-align: left;
-}
-
 .hero-section h1 {
   font-size: 3.5rem;
-  color: #a78bfa;
+  margin-bottom: 1rem;
 }
-
 .hero-section h4 {
-  color: #c4b5fd;
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
-
 .hero-section p {
-  color: #d6d3f0;
   font-size: 1.25rem;
   line-height: 1.6;
+  margin-bottom: 2rem;
 }
-
-/* Buttons */
-.btn-primary {
-  background-color: #8b5cf6;
+.hero-section .row {
+  min-height: 400px;
+  /* adjust */
+  align-items: center;
+}
+.btn.btn-outline-dark:hover {
+  background-color: #5B21B6;
+  color: #ffffff;
   border: none;
-  transition: background-color 0.3s ease;
 }
-
-.btn-primary:hover {
-  background-color: #a78bfa;
-}
-
-/* Outline buttons */
-.btn-outline-dark {
-  color: #a78bfa;
-  border-color: #a78bfa;
-}
-
-.btn-outline-dark:hover {
-  background-color: #a78bfa;
-  color: #1e1e2f;
-  border-color: #a78bfa;
-}
-
-/* Cards (Projects, Skills) */
-.card {
-  background-color: #2c2c44;
-  border: none;
-  color: #d6d3f0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 0.75rem;
-}
-
-.card:hover {
-  background-color: #4c3fbf;
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(167, 139, 250, 0.6);
-}
-
-.card-title {
-  color: #ede9fe;
-  font-weight: 700;
-}
-
-.card-text {
-  color: #c4b5fd;
-}
-
-/* Images inside cards */
-.card-img-top {
-  border-radius: 0.75rem 0.75rem 0 0;
+.hero-section img {
+  max-height: 450px;
+  width: auto;
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   object-fit: cover;
-  height: 200px;
 }
 
-/* Footer */
-footer {
-  background-color: #1e1e2f;
-  color: #7c3aed;
-  padding: 1rem 0;
-  text-align: center;
-  font-weight: 600;
+@media (min-width: 768px) {
+  .hero-section img {
+    width: 80%;
+    max-height: none;
+  }
 }
 
-/* Links */
-a {
-  color: #a78bfa;
-  text-decoration: none;
-}
-
-a:hover {
+/* About Me */
+.about-heading:hover,
+.skills-heading:hover,
+.project-heading:hover,
+.contact-heading:hover {
+  color: #5B21B6 !important;
   text-decoration: underline;
 }
+#about p,
+ul {
+  line-height: 2;
+}
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .hero-section h1 {
-    font-size: 2.5rem;
-  }
+
+/* Project Cards */
+.card {
+  border: 1px solid #E2E8F0;
+  color: #1E293B;
+  transition: all 0.3s ease;
+}
+.card-title {
+  font-weight: 600;
+  color: #1E293B;
+  transition: color 0.3s ease;
+}
+.card-text {
+  color: #475569;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.card:hover {
+  background-color: #b9c4ec;
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+.card-img-top {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+.card:hover .card-title,
+.card:hover .card-text {
+  color: #1E293B;
+}
+.card:hover .btn-outline-dark {
+  border-color: #5B21B6;
+  color: #5B21B6;
+}
+.card:hover .btn-outline-dark:hover {
+  background-color: #5B21B6;
+  color: #ffffff;
+}
+
+/* Contact Form */
+.form-control,
+textarea {
+  background-color: #ffffff;
+  color: #1E293B;
+  border: 1px solid #E2E8F0;
+  border-radius: 6px;
+}
+.form-control::placeholder {
+  color: #94A3B8;
+}
+.form-control:hover {
+  border-color: #5B21B6;
+}
+.form-label {
+  font-weight: 500;
 }
 
 /* Primary Button */
@@ -140,12 +144,9 @@ a:hover {
   background-color: #5B21B6;
   border: none;
 }
-
 .btn-primary:hover {
   background-color: #7C3AED;
 }
-
-
 
 
 
